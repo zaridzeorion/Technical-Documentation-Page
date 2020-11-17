@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Peddana&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Peddana", serif;
+  font-size: 30px;
+  font-weight: 500;
+  transition: 0.85s;
+}
+
+#wrapper {
+  display: flex;
+  position: relative;
+  padding-left: 10px;
+}
+
+#wrapper,
+#navbar {
+  position: fixed;
+  width: 400px;
+  height: 100%;
+  background: rgb(31, 36, 43);
+  padding: 30px 0;
+  scrolling: auto;
+}
+
+h1 {
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#wrapper,
+#navbar a {
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+  margin-left: -7.6px;
+  margin-top: -7.6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wrapper:hover,
+#navbar:hover a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+main {
+  position: relative;
+  left: 100px;
+  width: full;
+  z-index: 0;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 295px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #wrapper {
+    visibility: hidden;
+  }
+
+  #navbar ul {
+    visibility: hidden;
+  }
+
+  #navbar {
+    visibility: hidden;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    background: rgb(31, 36, 43);
+    color: white;
+    margin: 0;
+    left: 0;
+  }
+}
